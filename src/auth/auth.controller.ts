@@ -10,6 +10,8 @@ export class AuthController {
 
   @MessagePattern('auth.register.user')
   registerUser(@Payload() registerUserDto:  RegisterUserDto){
+    console.log("llego al menos");
+    
     // return registerUserDto;
     return this.authService.registerUser(registerUserDto);
   }
