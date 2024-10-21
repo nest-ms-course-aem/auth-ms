@@ -24,6 +24,9 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     })
   );
+
+  console.log("hola");
+  
   
   await app.listen();
 
